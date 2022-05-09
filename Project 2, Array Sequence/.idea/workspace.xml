@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3bb42544-d522-4605-8a91-fa2b8c591a36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../hw3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw3/hw3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw3/src/hw3/Ball.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw3/src/hw3/BallClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw3/src/hw3/PriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proj - 3/Proj.3/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proj - 3/Proj.3/out/production/Proj.3/proj3/LinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Proj - 3/Proj.3/out/production/Proj.3/proj3/LinkedListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proj - 3/Proj.3/out/production/Proj.3/proj3/Sequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Proj - 3/Proj.3/out/production/Proj.3/proj3/Sequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proj - 3/Proj.3/out/production/Proj.3/proj3/SequenceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Proj - 3/Proj.3/out/production/Proj.3/proj3/SequenceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proj - 3/Proj.3/src/proj3/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proj - 3/Proj.3/src/proj3/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proj - 3/Proj.3/src/proj3/Sequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proj - 3/Proj.3/src/proj3/Sequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proj - 3/Proj.3/src/proj3/SequenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Proj - 3/Proj.3/src/proj3/SequenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj - 2, csc.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28m6bf4eD2uP1U1Gwy46oRw2qMN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/pratikraj/Documents/GitHub/CSC-151/Projects/proj - 2, csc"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3bb42544-d522-4605-8a91-fa2b8c591a36" name="Changes" comment="" />
+      <created>1651809486780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651809486780</updated>
+    </task>
+    <servers />
+  </component>
+</project>
