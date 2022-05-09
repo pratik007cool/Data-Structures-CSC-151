@@ -8,6 +8,7 @@ package hwk2;
  * I affirm that I have carried out the attached academic endeavors with full academic honesty,
  * in accordance with the Union College Honor Code and the course syllabus.
  */
+//GitHub Cloud
 public class LinkedList
 {
     private int length;          // number of nodes
