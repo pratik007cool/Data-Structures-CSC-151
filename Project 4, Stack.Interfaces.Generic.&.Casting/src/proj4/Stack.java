@@ -4,7 +4,6 @@ package proj4;
 // Notice that the generic type parameter does NOT implement
 // the Token interface.  Make sure you understand why it shouldn't
 // (and see the StackTest class for a hint.  Or just ask me!)
-//hello World.....
 public class Stack<T>
 {
 
@@ -12,7 +11,7 @@ public class Stack<T>
        
     }
 
-    LinkedList list = new LinkedList();
+    LinkedList<T> list = new LinkedList<T>();
     public boolean isEmpty() {
         return (size() == 0);
     }
@@ -30,13 +29,13 @@ public class Stack<T>
      *  @return the String the deleted node contains.  Returns null if list empty.
      */
     public T pop() {
-        return (T) list.removeHead();
+        return list.removeHead();
     }
     /**
      * @return the value at the 0 index position
      */
     public T peek() {
-        return (T) list.valueAtIndex(0);
+        return list.valueAtIndex(0);
     }
 
     /**
@@ -47,7 +46,7 @@ public class Stack<T>
     }
      
     public String toString() {
-        return "";    //erase this line
+        return list.toString();    //erase this line
     }
     
 } 

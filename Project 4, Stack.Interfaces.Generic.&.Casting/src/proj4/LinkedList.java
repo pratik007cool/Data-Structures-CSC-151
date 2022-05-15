@@ -12,7 +12,7 @@ package proj4;
 public class LinkedList<T>
 {
     private int length;          // number of nodes
-    private ListNode firstNode;  // pointer to first node
+    private ListNode<T> firstNode;  // pointer to first node
 
     public LinkedList()
     {
@@ -26,7 +26,7 @@ public class LinkedList<T>
      */
     public void insertAtHead(T newData)
     {
-    	ListNode newnode = new ListNode(newData);
+    	ListNode<T> newnode = new ListNode<T>(newData);
         if (isEmpty())
         {
             firstNode=newnode;
@@ -43,17 +43,16 @@ public class LinkedList<T>
      * 
      *  @return the String the deleted node contains.  Returns null if list empty.
      */
-    public String removeHead()
+    public T removeHead()
     {
-        //ListNode newnode = new ListNode(firstNode.data);
     	if (isEmpty()){
             return null;
         }
         else{
-            String container = (String) firstNode.data;
+            Object container = (T) firstNode.data;
             firstNode = firstNode.next;
             length--;
-            return container;
+            return (T) container;
         }
 
         // implement me (AFTER writing some tests)!
@@ -67,12 +66,12 @@ public class LinkedList<T>
     public void insertAtTail(String newData)
     {
         // implement me (AFTER writing some tests)!
-        ListNode newnode = new ListNode(newData);
+        ListNode<T> newnode = new ListNode<T>( (T) newData);
         if (isEmpty()){
             firstNode = newnode;
         }
         else{
-            ListNode runner = firstNode;
+            ListNode<T> runner = firstNode;
             while(runner.next != null){
                 runner = runner.next;
             }
@@ -93,7 +92,7 @@ public class LinkedList<T>
             return -1;
         }
         else{
-            ListNode runner = firstNode;
+            ListNode<T> runner = firstNode;
             int count = 0;
             while(!runner.data.equals(value) && runner.next != null){
                 count++;
@@ -117,7 +116,7 @@ public class LinkedList<T>
             return null;
         }
         else{
-            ListNode runner = firstNode;
+            ListNode<T> runner = firstNode;
             int count = 0;
             while(count != index && index <= getLength()){
                 count ++;
@@ -132,8 +131,8 @@ public class LinkedList<T>
      */
     public String toString() 
     {
-    	String toReturn="(";
-    	ListNode runner=firstNode;
+    	String toReturn="{>";
+    	ListNode<T> runner = firstNode;
     	while (runner!=null)
     	{
     		toReturn = toReturn + runner;  //call node's toString automatically
@@ -143,7 +142,7 @@ public class LinkedList<T>
     			toReturn = toReturn + ",";
     		}
     	}
-    	toReturn = toReturn + ")";
+    	toReturn = toReturn + "}";
     	return toReturn;
     }
     
