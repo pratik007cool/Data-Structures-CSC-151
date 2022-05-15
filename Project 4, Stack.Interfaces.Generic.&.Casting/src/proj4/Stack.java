@@ -18,20 +18,33 @@ public class Stack<T>
         return (size() == 0);
     }
 
+    /** insert new element at linked list's head
+     *
+     * @param toPush the String to be inserted
+     */
     public void push(T toPush) {
         list.insertAtHead(toPush);
     }
-  
+
+    /** remove and return data at the head of the list
+     *
+     *  @return the String the deleted node contains.  Returns null if list empty.
+     */
     public T pop() {
         return (T) list.removeHead();
     }
-  
+    /**
+     * @return the value at the 0 index position
+     */
     public T peek() {
-        return null;
+        return (T) list.valueAtIndex(0);
     }
-    
+
+    /**
+     * @return the size of the list.
+     */
     public int size() {
-    	return 1;    //erase this line
+    	return list.getLength();
     }
      
     public String toString() {

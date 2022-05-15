@@ -106,6 +106,26 @@ public class LinkedList<T>
         }
 
     }
+
+    /**
+     * Navigate to the index position and return the value at that index
+     * @param index
+     * @return the value at that index position
+     */
+    public T valueAtIndex(int index){
+        if (isEmpty()){
+            return null;
+        }
+        else{
+            ListNode runner = firstNode;
+            int count = 0;
+            while(count != index && index <= getLength()){
+                count ++;
+                runner = runner.next;
+            }
+            return (T) runner.data;
+        }
+    }
     
     /**
      *  @return return linked list as printable string
