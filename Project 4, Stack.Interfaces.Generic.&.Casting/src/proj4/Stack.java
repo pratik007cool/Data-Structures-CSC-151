@@ -4,8 +4,7 @@ package proj4;
 // Notice that the generic type parameter does NOT implement
 // the Token interface.  Make sure you understand why it shouldn't
 // (and see the StackTest class for a hint.  Or just ask me!)
-
-//Push it to cloud.
+//hello World.....
 public class Stack<T>
 {
 
