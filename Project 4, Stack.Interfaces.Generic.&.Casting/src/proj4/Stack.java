@@ -6,36 +6,25 @@ package proj4;
 // (and see the StackTest class for a hint.  Or just ask me!)
 public class Stack<T>
 {
-    public static class Node{
-        private String data;
-        private Node next;
-        private Node(String data){
-            this.data = data;
-        }
-    }
-    
-    public Stack() {
+
+        public Stack() {
        
     }
 
-    private Node top;
+    LinkedList list = new LinkedList();
     public boolean isEmpty() {
         return (size() == 0);
     }
 
-    public void push(String toPush) {
-       Node newnode = new Node(toPush);
-       newnode.next = top;
-       top = newnode;
+    public void push(T toPush) {
+        list.insertAtHead(toPush);
     }
   
     public T pop() {
-        //return 1;
-        return null;
+        return (T) list.removeHead();
     }
   
     public T peek() {
-        //return top.data;
         return null;
     }
     
