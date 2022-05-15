@@ -6,29 +6,41 @@ package proj4;
 // (and see the StackTest class for a hint.  Or just ask me!)
 public class Stack<T>
 {
+    public static class Node{
+        private String data;
+        private Node next;
+        private Node(String data){
+            this.data = data;
+        }
+    }
     
     public Stack() {
        
     }
-   
-    public boolean isEmpty() {  
-    	return true;  //erase this line  
+
+    private Node top;
+    public boolean isEmpty() {
+        return (size() == 0);
     }
 
-    public void push(T toPush) {
-       
+    public void push(String toPush) {
+       Node newnode = new Node(toPush);
+       newnode.next = top;
+       top = newnode;
     }
   
     public T pop() {
-    	return null;  //erase this line
-    } 
+        //return 1;
+        return null;
+    }
   
     public T peek() {
-    	return null;  //erase this line
-    } 
+        //return top.data;
+        return null;
+    }
     
     public int size() {
-    	return -1;    //erase this line
+    	return 1;    //erase this line
     }
      
     public String toString() {
