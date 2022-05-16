@@ -11,9 +11,11 @@ public class Plus implements Token {
     public String toString() {
     	return "erase this";
     }
-    
+
+    String Postfix;
     public String handle(Stack<Token> s)
     {
+        
     	return "erase this";
     }
 }

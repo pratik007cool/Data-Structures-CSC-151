@@ -10,5 +10,6 @@ public class LeftParen implements Token{
 
     public String handle(Stack<Token> stack){
         stack.push(this);
+        return "";
     }
 }

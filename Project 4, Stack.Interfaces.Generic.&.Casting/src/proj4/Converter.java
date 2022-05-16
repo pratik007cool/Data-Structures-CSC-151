@@ -21,19 +21,19 @@ public class Converter {
     }
 
 	public <T> String convert() {
+		String Postfix = null;
 		FileReader reader = new FileReader(file);
 		String temp = reader.nextToken();
 		Stack<Token> a = new Stack<Token>();
 		while (!temp.equals("EOF")) {
 			if (getToken(temp) != null) {
-				(getToken(temp)).handle(a);
+				Postfix += (getToken(temp)).handle(a);
 				temp = reader.nextToken();
 			} else{
-
+				Postfix += temp;
 			}
-			return null;
 		}
-		return temp;
+		return Postfix;
 	}
 
 	private Token getToken(String token){
