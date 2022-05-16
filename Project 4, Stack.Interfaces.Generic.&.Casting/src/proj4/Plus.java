@@ -7,7 +7,7 @@ package proj4;
  * @version (a version number or a date)
  */
 public class Plus implements Token {
- 
+
     public String toString() {
     	return "erase this";
     }

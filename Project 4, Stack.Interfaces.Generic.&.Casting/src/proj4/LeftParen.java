@@ -6,6 +6,9 @@ package proj4;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class LeftParen {
+public class LeftParen implements Token{
 
+    public String handle(Stack<Token> stack){
+        stack.push(this);
+    }
 }

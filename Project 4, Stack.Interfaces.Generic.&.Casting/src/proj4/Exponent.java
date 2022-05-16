@@ -6,6 +6,6 @@ package proj4;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Exponent {    
+public class Exponent implements Token{
    
 }

@@ -6,7 +6,7 @@ package proj4;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Divide {
+public class Divide implements Token{
 
 
 }
