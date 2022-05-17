@@ -21,7 +21,7 @@ public class Converter {
     }
 
 	public <T> String convert() {
-		String Postfix = null;
+		String Postfix = "";
 		FileReader reader = new FileReader(file);
 		String temp = reader.nextToken();
 		Stack<Token> a = new Stack<Token>();

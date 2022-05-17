@@ -6,8 +6,9 @@ package proj4;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Plus implements Token {
+public class Plus implements Token,Operator {
 
+    int Precedence = 1;
     public String toString() {
     	return "erase this";
     }
@@ -17,5 +18,8 @@ public class Plus implements Token {
     {
         
     	return "erase this";
+    }
+    public int getPrecedence(){
+        return Precedence;
     }
 }

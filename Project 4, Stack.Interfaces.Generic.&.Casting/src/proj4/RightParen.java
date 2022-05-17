@@ -11,8 +11,8 @@ public class RightParen implements Token{
 
     public String handle(Stack<Token> stack) {
        String addToPostfix = "";
-       while(!stack.peek().equals("(")){
-           addToPostfix += stack.pop();
+       while(!(stack.peek() instanceof LeftParen)){
+           addToPostfix += stack.pop().toString();
 
        }
        stack.pop();
