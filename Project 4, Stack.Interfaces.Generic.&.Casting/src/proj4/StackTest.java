@@ -9,10 +9,11 @@ import org.junit.rules.Timeout;
 
 /**
  * 
- * Write a description of class StackTest here.
+ * Testing the stack class methods, such as
+ * pop, peek, push etc.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Pratik Raj
+ * @version May 18, 2022
  *
  */
 public class StackTest {
@@ -41,6 +42,14 @@ public class StackTest {
     public void testStackPushOneOntoEmptyStack () {
         stack.push("A");
         assertEquals ("Pushing A onto an empty stack.", "{>A}", stack.toString().replaceAll("[ ]+", ""));
+
+        //Testing Peek
+        stack.peek();
+        assertEquals ("Pushing A onto an empty stack.", "{>A}", stack.toString().replaceAll("[ ]+", ""));
+
+        //Testing Pop
+        stack.pop();
+        assertEquals ("Pushing first A, then B, then C onto an empty stack.", "{>}", stack.toString().replaceAll("[ ]+", ""));
     }
     
     @Test
@@ -48,6 +57,14 @@ public class StackTest {
         stack.push("A");
         stack.push("B");
         assertEquals ("Pushing first A and then B onto an empty stack.", "{>B,A}", stack.toString().replaceAll("[ ]+", ""));
+
+        //Testing Peek
+        stack.peek();
+        assertEquals ("Pushing A onto an empty stack.", "{>B}", stack.toString().replaceAll("[ ]+", ""));
+
+        //Testing Pop
+        stack.pop();
+        assertEquals ("Pushing first A, then B, then C onto an empty stack.", "{>A}", stack.toString().replaceAll("[ ]+", ""));
     }
     
     @Test
@@ -56,5 +73,13 @@ public class StackTest {
         stack.push("B");
         stack.push("C");
         assertEquals ("Pushing first A, then B, then C onto an empty stack.", "{>C,B,A}", stack.toString().replaceAll("[ ]+", ""));
+
+        //Testing Peek
+        stack.peek();
+        assertEquals ("Pushing A onto an empty stack.", "{>C}", stack.toString().replaceAll("[ ]+", ""));
+
+        //Testing Pop
+        stack.pop();
+        assertEquals ("Pushing first A, then B, then C onto an empty stack.", "{>B,A}", stack.toString().replaceAll("[ ]+", ""));
     }
 }

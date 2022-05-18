@@ -7,11 +7,11 @@ package proj4;
 public class Stack<T>
 {
 
-        public Stack() {
-       
+    LinkedList<T> list;
+    public Stack() {
+        list = new LinkedList<T>();
     }
 
-    LinkedList<T> list = new LinkedList<T>();
     public boolean isEmpty() {
         return (size() == 0);
     }

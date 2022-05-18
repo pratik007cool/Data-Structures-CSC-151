@@ -1,13 +1,19 @@
 package proj4;
 
 /**
- * Write a description of class RightParen here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * The RightParen class implements Token interface and contains
+ * an instance method, handle() which when called can pop and append it to the postfix string all
+ * operators on the stack down to the most recently scanned left parenthesis. Then discard
+ * this pair of parentheses.
+ *
+ * @author Pratik Raj
+ * @version May 18, 2022
  */
 public class RightParen implements Token{
 
+    public String toString(){
+        return ")";
+    }
 
     public String handle(Stack<Token> stack) {
        String addToPostfix = "";

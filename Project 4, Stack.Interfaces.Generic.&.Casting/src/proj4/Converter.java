@@ -3,10 +3,13 @@ package proj4;
 import java.io.File;
 
 /**
- * Write a description of class Converter here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * The Converter class contains an instance method, convert(),
+ * that reads in a token, identifies it, makes a new Token type from it,
+ * and then calls the item's handle() method to take care of it. It repeats this
+ * process until all tokens have been read and processed.
+ *
+ * @author Pratik Raj
+ * @version May 18, 2022
  */
 public class Converter {
 
@@ -20,20 +23,30 @@ public class Converter {
         file = infile;
     }
 
-	public <T> String convert() {
+	public String convert() {
 		String Postfix = "";
+		String Print = "";
 		FileReader reader = new FileReader(file);
+
 		String temp = reader.nextToken();
 		Stack<Token> a = new Stack<Token>();
-		while (!temp.equals("EOF")) {
+
+		while (!temp.equals("E")) {
 			if (getToken(temp) != null) {
+				if(!temp.equals(";")){
+					Print += temp;}
 				Postfix += (getToken(temp)).handle(a);
 				temp = reader.nextToken();
 			} else{
+				Print += temp;
 				Postfix += temp;
+				temp = reader.nextToken();
 			}
 		}
-		return Postfix;
+		String C = Print+ " --> "+ Postfix;
+		System.out.println(C);
+		return C;
+		//return Postfix;
 	}
 
 	private Token getToken(String token){

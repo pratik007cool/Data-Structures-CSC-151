@@ -135,14 +135,14 @@ public class LinkedList<T>
     	ListNode<T> runner = firstNode;
     	while (runner!=null)
     	{
-    		toReturn = toReturn + runner;  //call node's toString automatically
-    		runner=runner.next;
-    		if (runner!=null)
+    		toReturn += runner;  //call node's toString automatically
+    		runner = runner.next;
+    		if (runner != null)
     		{
-    			toReturn = toReturn + ",";
+    			toReturn += ",";
     		}
     	}
-    	toReturn = toReturn + "}";
+    	toReturn += "}";
     	return toReturn;
     }
     

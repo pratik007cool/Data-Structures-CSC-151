@@ -2,8 +2,8 @@ package proj4;
 /**
  * Write a description of class Client here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Pratik Raj
+ * @version May 18, 2022
  */
 
 public class Client
