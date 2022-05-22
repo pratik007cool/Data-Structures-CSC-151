@@ -54,14 +54,21 @@ public class BinarySearchTree
         if (startingNode == null){
             return value;
         }
-        BSTNode parent = null;
+        //BSTNode parent = null;
         BSTNode current = startingNode;
-        while(current != null){
-            parent = current;
-            if (value.)
+        while(current.isLeaf()){
+            if (current.key.compareTo(value.key) < 0 ){
+
+                if (current.hasRightChildOnly()){
+
+                }
+                else{
+                    current = value;
+                }
+            }
         }
 
-        return Parent;
+        return current;
     }
 
     public void insert(String value)
