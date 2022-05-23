@@ -1,3 +1,5 @@
+package hwk4;
+
 /** A not-very-reusable node class, since it only holds a String.
  *  But good enough for this hwk.
  * 
@@ -55,5 +57,6 @@ public class BSTNode {
     public boolean hasLeftChildOnly() {
     	return this.llink != null && this.rlink == null;
     }
+
 
 }
