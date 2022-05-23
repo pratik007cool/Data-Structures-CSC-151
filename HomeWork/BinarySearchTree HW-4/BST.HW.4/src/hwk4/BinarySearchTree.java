@@ -54,8 +54,7 @@ public class BinarySearchTree
      * Inserts value into the BST.
      * @param value
      */
-<<<<<<< HEAD:HomeWork/BinarySearchTree HW-4/BST.HW.4/src/hwk4/BinarySearchTree.java
-=======
+
     private BSTNode insert(BSTNode startingNode, BSTNode value){
         if (startingNode == null){
             return value;
@@ -77,7 +76,6 @@ public class BinarySearchTree
         return current;
     }
 
->>>>>>> 9dec6e66c927dc1061aa9cc5170ff5b453ce6cde:HomeWork/BinarySearchTree HW-4/BST.HW.4/src/BinarySearchTree.java
     public void insert(String value)
     {
         BSTNode newNode = new BSTNode(value);
