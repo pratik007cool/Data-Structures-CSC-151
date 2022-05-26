@@ -50,6 +50,8 @@ public class BinarySearchTree
         root = recursiveInsert(root, newNode);
     }
 
+
+
     /**
      * Inserts value into the BST.
      * @param value
@@ -151,6 +153,46 @@ public class BinarySearchTree
 
     public int size(){
         return size(root);
+    }
+
+    private BSTNode delete(BSTNode subroot, int value){
+        if (subroot == null){
+            return subroot;
+        }
+        else if (Integer.parseInt(subroot.key) < value ){
+            subroot.rlink = delete(subroot.rlink, value);
+            return subroot;
+        }
+        else if (Integer.parseInt(subroot.key) > value){
+            subroot.llink = delete(subroot.llink, value);
+            return subroot;
+        }
+        else{
+            if (subroot.isLeaf()) {
+                System.out.println(subroot.key);
+                subroot = null;
+                return subroot;
+            }
+            if (subroot.hasRightChildOnly()){
+                return subroot.rlink;
+            }
+            if (subroot.hasLeftChildOnly()){
+                return subroot.llink;
+            }
+            else {
+                subroot.key = subroot.llink.key;
+                subroot.llink = subroot.llink.llink;
+//                int a = Integer.parseInt(subroot.llink.key);
+//                delete(subroot.llink, a);
+                return subroot;
+            }
+
+        }
+    }
+
+    public void delete(int value){
+        //BSTNode newNode = new BSTNode(newString);
+        root = delete(root, value);
     }
 
 
