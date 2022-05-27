@@ -157,7 +157,7 @@ public class BinarySearchTree
 
     private BSTNode delete(BSTNode subroot, int value){
         if (subroot == null){
-            return subroot;
+            return null;
         }
         else if (Integer.parseInt(subroot.key) < value ){
             subroot.rlink = delete(subroot.rlink, value);
@@ -169,21 +169,17 @@ public class BinarySearchTree
         }
         else{
             if (subroot.isLeaf()) {
-                System.out.println(subroot.key);
-                subroot = null;
-                return subroot;
+                return null;
             }
-            if (subroot.hasRightChildOnly()){
+            else if (subroot.hasRightChildOnly()){
                 return subroot.rlink;
             }
-            if (subroot.hasLeftChildOnly()){
+            else if (subroot.hasLeftChildOnly()){
                 return subroot.llink;
             }
             else {
                 subroot.key = subroot.llink.key;
                 subroot.llink = subroot.llink.llink;
-//                int a = Integer.parseInt(subroot.llink.key);
-//                delete(subroot.llink, a);
                 return subroot;
             }
 

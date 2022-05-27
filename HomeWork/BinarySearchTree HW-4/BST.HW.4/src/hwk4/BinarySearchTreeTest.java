@@ -67,7 +67,7 @@ public class BinarySearchTreeTest {
         BST.insert("9");
         BST.insert("10");
         System.out.println(BST.toString());
-        BST.delete(9);
+        BST.delete(6);
         System.out.println(BST.toString());
         //BST.insert("7");
         assertEquals(5, BST.size());
