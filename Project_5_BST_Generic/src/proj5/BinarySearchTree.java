@@ -1,5 +1,15 @@
 package proj5;
 
+/** This is the BST ADT.  It should contain methods that allow it to
+ *  insert new nodes, delete nodes, search, etc.  You'll be adding
+ *  code to this class for this hwk.
+ *
+ * @author Pratik Raj
+ * @version Jun 1, 2022.
+ *  I affirm that I have carried out the attached academic endeavors with full academic honesty,
+ *  in accordance with the Union College Honor Code and the course syllabus.
+ */
+
 public class BinarySearchTree<T extends Comparable<T>> {
      private BSTNode<T> root;
           
@@ -44,7 +54,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     /**
      * Inserts value into the BST.
-     * @param value
+     * @param value, startingNode
      */
 
     private BSTNode insert(BSTNode startingNode, BSTNode value){
@@ -68,6 +78,10 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return current;
     }
 
+    /**
+     * Inserts value into the BST.
+     * @param value
+     */
     public void insert(T value)
     {
         BSTNode newNode = new BSTNode(value);
@@ -101,7 +115,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
      *  Returns false otherwise.
      *  Write the recursive version. You'll need a private helper.
      *  Think: What's the base case and recursive case here?
-     * @param target
+     * @param target, root
      * @return true/false
      */
     private boolean search(BSTNode root, T target)
@@ -119,6 +133,11 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
+    /**
+     *
+     * @param target
+     * @return true/false
+     */
     public boolean search(T target){
         return search(root, target);
     }
@@ -128,7 +147,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
      *  Write this recursively, so you'll need a private helper.
      *  You are NOT permitted to add any other instance variables
      *  to the starter code.
-     * @return
+     * @return no. of data items.
      */
     private int size(BSTNode root) {
         if (root == null) {
@@ -141,10 +160,14 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     }
 
+    /**
+     * Figure out the size of BST.
+     * @return size
+     */
     public int size(){
         return size(root);
     }
-    
+
     private BSTNode<T> maxValue(BSTNode root){
         BSTNode current = root;
         while(current.rlink != null){
@@ -153,6 +176,12 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return current;
     }
 
+    /**
+     * This method will delete a node from the BST.
+     * @param subroot
+     * @param value
+     * @return
+     */
     private BSTNode<T> delete(BSTNode<T> subroot, T value){
         if (subroot == null){
             return null;
@@ -184,6 +213,10 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
+    /**
+     * This method will delete a node from the BST.
+     * @param value
+     */
     public void delete(T value){
         root = delete(root, value);
     }
@@ -216,7 +249,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
 
     /**
-     * This method seraches the target node recursively in the tree
+     * This method searches the target node recursively in the tree
      * 
      * @param root root of the tree
      * @param target target node value to search in tree

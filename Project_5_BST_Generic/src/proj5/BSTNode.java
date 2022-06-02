@@ -1,4 +1,10 @@
 package proj5;
+/** A not-very-reusable node class, since it only holds a String.
+ *  But good enough for this hwk.
+ *
+ * @author Chris Fernandes
+ * @version 2/21/18
+ */
 
 public class BSTNode<T extends Comparable<T>> {
 

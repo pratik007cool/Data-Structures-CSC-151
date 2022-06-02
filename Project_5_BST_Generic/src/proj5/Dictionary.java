@@ -1,5 +1,12 @@
 package proj5;
 
+/**
+ * The Dictionary class keeps the words that we don't want to place
+ * in the index. For every word in the text, we first check
+ * the dictionary to see if the word occurs there. Only if
+ * it's not in the dictionary will we place it in the index.
+ */
+
 import java.util.Objects;
 
 

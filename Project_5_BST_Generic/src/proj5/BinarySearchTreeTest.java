@@ -1,5 +1,10 @@
 package proj5;
 
+/**
+ * This is a BST test class. It is mainly testing
+ * the insert, search, delete and size function.
+ */
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;

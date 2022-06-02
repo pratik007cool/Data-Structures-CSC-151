@@ -1,5 +1,9 @@
 package proj5;
 
+/**
+ * Test for the Dictionary class.
+ */
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;

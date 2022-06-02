@@ -1,5 +1,11 @@
 package proj5;
 
+/**
+ * Driver for the index maker project
+ *
+ * @author Pratik Raj
+ * @version Jun 1, 2022.
+ */
 public class Client {
 
 

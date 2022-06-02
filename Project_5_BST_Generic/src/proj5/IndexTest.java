@@ -1,5 +1,7 @@
 package proj5;
-
+/**
+ * This test the index class.
+ */
 
 import org.junit.Test;
 

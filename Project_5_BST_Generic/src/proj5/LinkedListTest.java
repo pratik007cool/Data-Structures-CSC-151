@@ -1,4 +1,7 @@
 package proj5;
+/**
+ * Test for the LinkedList class.
+ */
 
 import org.junit.Test;
 

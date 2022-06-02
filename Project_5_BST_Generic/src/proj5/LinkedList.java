@@ -1,5 +1,13 @@
 package proj5;
 
+/**
+ * Linked List is a collection of data nodes.  All methods here relate to
+ * how one can manipulate those nodes.
+ * @author Pratik Raj
+ * @version April 24, 2022.
+ * I affirm that I have carried out the attached academic endeavors with full academic honesty,
+ * in accordance with the Union College Honor Code and the course syllabus.
+ */
 public class LinkedList<T>
 {
     private int length;          // number of nodes

@@ -1,5 +1,13 @@
 package proj5;
 
+/**
+ * The index class holds the word with there associated
+ * pagelist listing the page numbers on which that word
+ * is found. Each pagelist will be able to hold 4-page
+ * numbers. Thus, the 5th attempt to insert a page number
+ * into a given pagelist will find the pagelist full.
+ */
+
 import java.util.Objects;
 
 public class Index {
@@ -196,7 +204,7 @@ public class Index {
     }
 
     /**
-     * Delets the node from index
+     * Deletes the node from index
      * @param node
      */
     public void delete(Node node){
